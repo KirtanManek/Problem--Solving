@@ -30,7 +30,6 @@ class Result {
             System.out.print("\n");
         }
     }
-
 }
 
 public class Staircase {
