@@ -16,12 +16,9 @@ class Result {
      */
 
     public static List<Integer> roundingGradesOfStudents(List<Integer> grades) {
-        // Write your code here
-        double temp;
         for (int i = 0; i < grades.size(); i++){
             if ((5*Math.ceil(temp1)) - grades.get(i) < 3 && grades.get(i) > 37){
-                temp = Math.ceil((double)grades.get(i) / 5;);
-                grades.set(i, (int)temp * 5);
+                grades.set(i, (int)Math.ceil((double)grades.get(i) / 5) * 5);
             }
         }
         return grades;
