@@ -17,22 +17,14 @@ class Result {
 
     public static List<Integer> roundingGradesOfStudents(List<Integer> grades) {
         // Write your code here
-        List<Integer> ans = new ArrayList<>();
-        double temp, temp1;
+        double temp;
         for (int i = 0; i < grades.size(); i++){
-            temp1 = (double)grades.get(i) / 5;
-            if (grades.get(i) < 38){
-                ans.add(grades.get(i));
-            }
-            else if ((5*Math.ceil(temp1)) - grades.get(i) < 3){
-                temp = Math.ceil(temp1);
-                ans.add((int)temp * 5);
-            }
-            else {
-                ans.add(grades.get(i));
+            if ((5*Math.ceil(temp1)) - grades.get(i) < 3 && grades.get(i) > 37){
+                temp = Math.ceil((double)grades.get(i) / 5;);
+                grades.set(i, (int)temp * 5);
             }
         }
-        return ans;
+        return grades;
     }
 
 }
