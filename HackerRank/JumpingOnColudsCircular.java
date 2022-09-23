@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class JumpingOnColuds {
+public class JumpingOnColudsCircular {
 
     // Complete the jumpingOnClouds function below.
     static int jumping(int[] c, int k) {
