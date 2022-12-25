@@ -25,3 +25,5 @@ class Solution {
         return (int)Math.floor(z);
     }
 }
+
+// Credits : GFG (Geeks for Geeks)
